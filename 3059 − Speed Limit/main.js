@@ -5,7 +5,7 @@ const input = [
     [ 4, [15, 1], [25, 2], [30, 3], [10, 5] ]
   ]
 
-const main = () => input.forEach(i => calculate(i[0], i.slice(1)))
+main = () => input.forEach(i => calculate(i[0], i.slice(1)))
 
 ////////////////////////////////////////
 ////////// Main Logic Starts ///////////
