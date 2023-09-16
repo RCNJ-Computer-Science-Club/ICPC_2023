@@ -1,31 +1,26 @@
 
-let input = [
+const input = [
     [ 3, [20, 2], [30, 6], [10, 7] ],
     [ 2, [60, 1], [30, 5] ],
     [ 4, [15, 1], [25, 2], [30, 3], [10, 5] ]
   ]
 
-function main() {
-  input.forEach(i => calculate(i[0], i.slice(1)))
-}
-
+const main = () => input.forEach(i => calculate(i[0], i.slice(1)))
 
 function calculate(n, sets) {
-  let sum = 0, num = 0;
+  let speedInMiles = sets[0][0]
+  let elapsedTime = sets[0][1]
 
-  for (let i = 0; i < n; i++) {
-      num = sets[i][0]
+  let totalMiles = speedInMiles * elapsedTime
 
-      if (i < 1) num *= sets[i][1]
-      else       num *= sets[i][1] - sets[i - 1][1]
-
-      sum += num;
+  for (let i = 1; i < n; i++) {
+      speedInMiles = sets[i][0]
+      elapsedTime = sets[i][1] - sets[i - 1][1]
+      totalMiles += speedInMiles * elapsedTime
   }
 
-  console.log(sum, "miles")
+  console.log(totalMiles, "miles")
 }
-
-
 
 main()
 
