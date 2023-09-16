@@ -5,11 +5,10 @@ const input = [
     [ 4, [15, 1], [25, 2], [30, 3], [10, 5] ]
   ]
 
-main = () => input.forEach(i => calculate(i[0], i.slice(1)))
+function main() {
+ input.forEach(i => calculate(i[0], i.slice(1)))
+}
 
-////////////////////////////////////////
-////////// Main Logic Starts ///////////
-////////////////////////////////////////
 function calculate(n, sets) {
   let speedInMiles = sets[0][0]
   let elapsedTime = sets[0][1]
@@ -24,9 +23,6 @@ function calculate(n, sets) {
 
   console.log(totalMiles, "miles")
 }
-////////////////////////////////////////
-////////// Main Logic Ends ///////////
-////////////////////////////////////////
 
 main()
 
