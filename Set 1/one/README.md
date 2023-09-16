@@ -3,7 +3,8 @@
 Bill and Ted are taking a road trip. But the odometer in their car is broken, so they don't know how
 many miles they have driven. Fortunately, Bill has a working stopwatch, so they can record their speed
 and the total time they have driven. Unfortunately, their record keeping strategy is a little odd, so they
-need help computing the total distance driven. You are to write a program to do this computation.
+need help computing the total distance driven. You are to write a program to do this computation. 
+
 For example, if their log shows
 
 this means they drove 2 hours at 20 miles per hour, then 6−2=4 hours at 30 miles per hour, then 7−6=1
@@ -27,20 +28,22 @@ For each input set, print the distance driven, followed by a space, followed by 
 
 # Sample Input 
 
-3
-20 2
-30 6
-10 7
-2
-60 1
-30 5
-4
-15 1
+3 <br>
+20 2<br>
+30 6<br>
+10 7<br>
 
-25 2
-30 3
-10 5
-−1
+2<br>
+60 1<br>
+30 5<br>
+
+4<br>
+15 1<br>
+25 2<br>
+30 3<br>
+10 5<br>
+
+−1<br>
 
 # Sample Output
 170 miles
