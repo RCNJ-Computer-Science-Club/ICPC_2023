@@ -8,11 +8,10 @@ public class Main {
             { {4}, {15, 1}, {25, 2}, {30, 3}, {10, 5} }
         };
 
-        for (int[][] i: input) {
-            int n = i[0][0];    
-            int[][] st = Arrays.copyOfRange(i, 1, n + 1);
-            calculate(n, st);
-        }
+        Arrays.asList(input)
+              .forEach(i -> 
+                calculate(i[0][0], Arrays.copyOfRange(i, 1, i[0][0] + 1))
+              );
     }
 
     /**
