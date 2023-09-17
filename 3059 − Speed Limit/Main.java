@@ -10,7 +10,7 @@ public class Main {
 
         Arrays.asList(input)
               .forEach(i -> 
-                calculate(i[0][0], Arrays.copyOfRange(i, 1, i[0][0] + 1))
+                calculate(i[0][0], Arrays.copyOfRange(i, 1, i.length))
               );
     }
 
