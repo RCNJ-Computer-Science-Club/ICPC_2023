@@ -17,7 +17,7 @@ public class Main {
       count++;
     }
 
-    System.out.println(count + " cards(s)");
+    System.out.println(count + " card(s)");
   }
 
   public static void main(String[] args){ new Main(); }
