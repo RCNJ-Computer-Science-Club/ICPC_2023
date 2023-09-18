@@ -6,7 +6,6 @@ public class Main {
 
   Main(){
     int[] input = { 2, 3, 17, 41, 20, 666, 12, 53, 0 };
-    // int[] input = { 20 };
     for (int i : input) calculate(i);
   }
 
@@ -15,6 +14,7 @@ public class Main {
    */
   void calculate(int n) {
     ArrayList<Integer> list = new ArrayList<>();
+    int numOfPrimeSet = 0;
 
     // find prime
     for (int i = 2; i <= n; i++){
@@ -31,31 +31,19 @@ public class Main {
       if (isPrime)
         list.add(i);
     }
-    // System.out.println(list);
 
-
-    int count = 0;
     // step two
     for (int i = 0; i < list.size(); i++){
       int sum = 0;
-      int j = i;
-      while (sum < n && j < list.size()){
+
+      for (int j = i; sum < n && j < list.size(); j++)
         sum += list.get(j);
-        // System.out.println(list.get(j));
-        j++;
-      }
 
       if (sum == n)
-        count++;
-
-      // System.out.println("sum: " + sum + "\n");
+        numOfPrimeSet++;
     }
 
-
-
-    // System.out.println("\n\n\n");
-    System.out.println(count);
-
+    System.out.println(numOfPrimeSet);
   }
 
   public static void main(String[] args){ new Main(); }
