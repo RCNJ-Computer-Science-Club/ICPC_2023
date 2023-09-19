@@ -10,7 +10,7 @@ public class Main {
   }
 
   /**
-   * c = card length
+   * n = positive integer
    */
   void calculate(int n) {
     ArrayList<Integer> list = new ArrayList<>();
