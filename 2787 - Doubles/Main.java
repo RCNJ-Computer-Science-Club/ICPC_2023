@@ -5,7 +5,7 @@ public class Main {
                       {2, 4, 8, 10, 0},
                       {7, 5, 11, 13, 1, 3, 0}};
 
-    for (int[] i: input) calculate(i);
+    for (var i: input) calculate(i);
   }
 
   /**
