@@ -9,10 +9,10 @@ public class Main {
         { 305, 794 },
       };
 
-      calcualte(list);
+      calculate(list);
     }
 
-    void calcualte(int[][] list){
+    void calculate(int[][] list){
       for (int i = 1; i <= list[0][0]; i++){
         int sum = reverseInt(list[i][0]) + reverseInt(list[i][1]);
         System.out.println(reverseInt(sum));
